@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./style.css">
+        <!-- BootStrap Icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <title> Tour Packages </title>
+
+        <style>
+            *,
+            *::before,
+            *::after {
+            box-sizing: border-box;
+            }
+            
+            #body_1 {
+                min-height: 120px;
+                font-family: canada-type-gibson, sans-serif;
+                font-weight: 300;
+                font-size: 10px;
+                display: flex;
+                color:cyan;
+                flex-direction: column;
+                justify-content: center;
+                overflow: hidden;
+                background-color:transparent;
+            }
+
+            .content {
+                display: flex;
+                align-content: center;
+                justify-content: center;
+            }
+            :root {
+                --color-primary: #f6aca2;
+                --color-secondary: #f49b90;
+                --color-tertiary: #f28b7d;
+                --color-quaternary: #f07a6a;
+                --color-quinary: #ee6352;
+            }
+            #text_shadows {
+                text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+                    9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+                font-family: bungee, sans-serif;
+                font-weight: 400;
+                text-transform: uppercase;
+                font-size: calc(2rem + 5vw);
+                text-align: center;
+                margin: 0;
+                color: var(--color-primary);
+                color: transparent;
+                background-color:cyan;
+                background-clip: text;
+                animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+                letter-spacing: 0.4rem;
+            }
+            .card-link .btn{
+                color: black;
+                background-color:lightgreen;
+                font-size: 20px;
+                border-radius: 10px;
+            }
+            .card{
+                height: 100%;
+                width: 100%;
+            }
+            .card-body{
+                height: fit-content;
+                width: 100%;
+            }
+            .card-link{
+                height: fit-content;
+            }
+            .card-image img{
+                width: 100%;
+                height:100%;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/index/brand_logo.jpg" alt="" width="100" height="60" class="rounded-circle d-inline-block align-text-top">
+                    Terrific Tourism
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav" style="margin: 20px;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./places.html">Places</a>
+                        </li>    
+                        <li class="nav-item">
+                            <a class="nav-link" href="./packages.html">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactUs.html">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+                    <!-- Packages section Heading -->
+
+        <div class="container-fluid">
+            <div id="body_1" class="content" style="margin-top: 30px;margin-bottom: 60px;">
+                <h1 id="text_shadows" class="heading ">
+                    <span>P</span>
+                    <span>a</span>
+                    <span>c</span>
+                    <span>k</span>
+                    <span>a</span>
+                    <span>g</span>
+                    <span>e</span>
+                    <span>s</span>
+                </h1>
+            </div>
+        </div>
+                    <!-- Packages section Main -->
+
+        <div class="container mt-5">        
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image">
+                                <img src="./images/package/tajmahal.jpg">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h4><a href="#"> <i class="fa fa-map-marker"></i></a> Taj Mahal</h4>
+                                </div>
+                                <div class="text-danger">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i><br>
+                                        <span>(1,09,344)Reviews</span>
+                                </div><br>
+                                <div class="price"> $90.00 <b>-</b><span> $120.00</span> </div>
+                            </div>
+                            <div class="card-link">
+                                <a class="btn" href="./plan_trip.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image">
+                                <img src="./images/package/lal_kila.jpg">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h4><a href="#"> <i class="fa fa-map-marker"></i></a> Red Fort</h4>
+                                </div>
+                                <div class="text-danger">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half"></i><br>
+                                    <span>(90,344)Reviews</span>
+                                </div><br>
+                                    <div class="price"> $90.00 <b>-</b><span> $120.00</span> </div>
+                            </div>
+                            <div class="card-link">
+                                <a class="btn " href="./plan_trip.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image">
+                                <img src="./images/package/gateway_of_india.jpg">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h4><a href="#"> <i class="fa fa-map-marker"></i></a> Gateway of India</h4>
+                                </div>
+                                <div class="text-danger">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half"></i><br>
+                                    <span>(33,344)Reviews</span>
+                                </div><br>
+                                <div class="price"> $90.00 <b>-</b><span> $120.00</span> </div>
+                            </div>
+                            <div class="card-link">
+                                <a class="btn " href="./plan_trip.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image">
+                                <img src="./images/package/raigad_fort.jpg">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h4><a href="#"> <i class="fa fa-map-marker"></i></a> Raigad Fort</h4>
+                                </div>
+                                <div class="text-danger">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i><br>
+                                    <span class="blue-grey-text">(49,244)Reviews</span>
+                                </div><br>
+                                <div class="price"> $90.00 <b>-</b><span> $120.00</span> </div>
+                            </div>
+                            <div class="card-link">
+                                <a class="btn " href="./plan_trip.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image">
+                                <img src="./images/package/india_gate.jpg">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h4><a href="#"> <i class="fa fa-map-marker"></i></a> India Gate</h4>
+                                </div>
+                                <div class="text-danger">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i><br>
+                                    <span>(29,734)Reviews</span>
+                                </div><br>
+                                <div class="price"> $90.00 <b>-</b><span> $120.00</span> </div>
+                            </div>
+                            <div class="card-link">
+                                <a class="btn" href="./plan_trip.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image">
+                                <img src="./images/package/qutab_minar.jpg">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h4><a href="#"> <i class="fa fa-map-marker"></i></a> Qutub Minar</h4>
+                                </div>
+                                <div class="text-danger">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i><br>
+                                    <span>(34,902)Reviews</span>
+                                </div><br>
+                                <div class="price"> $90.00 <b>-</b><span> $120.00</span> </div>
+                            </div>
+                            <div class="card-link">
+                                <a class="btn" href="./plan_trip.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image">
+                                <img src="./images/package/sun_temple.jpg">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h4><a href="#"> <i class="fa fa-map-marker"></i></a> Sun Temple</h4>
+                                </div>
+                                <div class="text-danger">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half"></i><br>
+                                    <span>(43,294)Reviews</span>
+                                </div><br>
+                                <div class="price"> $90.00 <b>-</b><span> $120.00</span> </div>
+                            </div>
+                            <div class="card-link">
+                                <a class="btn" href="./plan_trip.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image">
+                                <img src="./images/package/temple_bihar.jpg">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h4><a href="#"> <i class="fa fa-map-marker"></i></a> Mundeshwari Temp</h4>
+                                </div>
+                                <div class="text-danger">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i><br>
+                                    <span>(55,644)Reviews</span>
+                                    </div><br>
+                                <div class="price"> $90.00 <b>-</b><span> $120.00</span> </div>
+                            </div>
+                            <div class="card-link">
+                                <a class="btn " href="./plan_trip.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image">
+                                <img src="./images/package/golden_temple.jpg">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h4><a href="#"> <i class="fa fa-map-marker"></i></a> The Golden Temple</h4>
+                                </div>
+                                <div class="text-danger">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i><br>
+                                    <span>(25,456)Reviews</span>
+                                </div><br>
+                                <div class="price"> $90.00 <b>-</b><span> $120.00</span> </div>
+                            </div>
+                            <div class="card-link">
+                                <a class="btn " href="./plan_trip.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image">
+                                <img src="./images/package/akshardham.jpg">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h4><a href="#"> <i class="fa fa-map-marker"></i></a> Akshardham</h4>
+                                </div>
+                                <div class="text-danger">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half"></i><br>
+                                    <span>(1,09,344)Reviews</span>
+                                </div><br>
+                                <div class="price"> $90.00 <b>-</b><span> $120.00</span> </div>
+                            </div>
+                            <div class="card-link">
+                                <a class="btn" href="./plan_trip.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image">
+                                <img src="./images/package/ajantha_caves.jpg">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h4><a href="#"> <i class="fa fa-map-marker"></i></a> Ajanta Caves</h4>
+                                </div>
+                                <div class="text-danger">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i><br>
+                                    <span>(50,344)Reviews</span>
+                                </div><br>
+                                <div class="price"> $90.00 <b>-</b><span> $120.00</span> </div>
+                            </div>
+                            <div class="card-link">
+                                <a class="btn " href="./plan_trip.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image">
+                                <img src="./images/package/elephanta_caves.jpg">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h4><a href="#"> <i class="fa fa-map-marker"></i></a> Elephanta Caves </h4>
+                                </div>
+                                <div class="text-danger">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half"></i><br>
+                                    <span>(54,743)Reviews</span>
+                                </div><br>
+                                <div class="price"> $90.00 <b>-</b><span> $120.00</span> </div>
+                            </div>
+                            <div class="card-link">
+                                <a class="btn" href="./plan_trip.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5 mb-5" style="margin-left: 250px;">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image">
+                                <img src="./images/package/statue_of_unity.jpg">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h4><a href="#"> <i class="fa fa-map-marker"></i></a> Statue of Unity</h4>
+                                </div>
+                                <div class="text-danger">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half"></i><br>
+                                    <span>(1,02,323)Reviews</span>
+                                </div><br>
+                                <div class="price"> $90.00 <b>-</b><span> $120.00</span> </div>
+                            </div>
+                            <div class="card-link">
+                                <a class="btn" href="./plan_trip.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image">
+                                <img src="./images/package/Jaipur-City-Palace.jpg">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h4><a href="#"> <i class="fa fa-map-marker"></i></a> Jaipur City Palace</h4>
+                                </div>
+                                <div class="text-danger">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half"></i><br>
+                                    <span>(70,321)Reviews</span>
+                                </div><br>
+                                <div class="price"> $90.00 <b>-</b><span> $120.00</span> </div>
+                            </div>
+                            <div class="card-link">
+                                <a class="btn" href="./plan_trip.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image">
+                                <img src="./images/package/garden.jpg">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h4><a href="#"> <i class="fa fa-map-marker"></i></a> Botanical Garden</h4>
+                                </div>
+                                <div class="text-danger">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i><br>
+                                    <span>(40,556)Reviews</span>
+                                </div><br>
+                                <div class="price"> $90.00 <b>-</b><span> $120.00</span> </div>
+                            </div>
+                            <div class="card-link">
+                                <a class="btn " href="./plan_trip.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+                    
+            <footer class="footer bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <h5 style="font-size: 35px; color: whitesmoke;">WE ARE GUIDERS</h5>
+                            <p class="text-danger"> A forward-thinking to enjoy your holidays.</p>
+                            <div><h4 class="text-muted">Connect us on :</h4>
+                                <a href="#"><i class="fa fa-google fa-2x"></i></a>
+                                <a href="#"><i class="fa fa-facebook-official fa-2x"></i></a>
+                                <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                                <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                                <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-3 float-end" >
+                            <h5 class="text-white">Links</h5>
+                            <ul>
+                                <li><a class="text-info" href="index.html">Home</a></li>
+                                <li><a class="text-info" href="./gallery.html">Gallery</a></li>
+                                <li><a class="text-info" href="./places.html">Places</a></li>
+                                <li><a class="text-info" href="./packages.html">Packages</a></li>
+                                <li><a class="text-info" href="./contactUs.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6" style="float: left;">
+                            <b style="color: whitesmoke; text-decoration:none">&copy; 2022 Copyright Text &nbsp;</b>
+                            <a href="#"><span
+                                    style="text-decoration: underline; font-size: 20px;"> travel@terrifictourism.com
+                                    </span></a>
+                        </div>
+                        <div class="col-md-6 float-end">
+                                <a class="" href="./packages.html" style="text-decoration:none;"> <span style=" color:deepskyblue; font-size: 30px; float: right;"> Terrific Tourism </span>
+                        </div>  
+                        
+                    </div>
+                </div>
+            </footer>
+    </body>
+</html>
